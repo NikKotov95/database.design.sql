@@ -5,6 +5,7 @@
 
 ## Задание 2. Команды SQL которые были использованы для создания БД
 
+```sql
 create table if not exists genre (
 	id serial primary key,
 	genre_name varchar(100) not null unique
@@ -44,3 +45,4 @@ create table if not exists track_collection (
     collection_of_songs_id integer references collection_of_songs(id),
     constraint track_collection_pk primary key (track_id, collection_of_songs_id)
 );
+```
